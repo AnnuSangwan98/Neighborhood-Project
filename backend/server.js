@@ -3,10 +3,12 @@ const cors = require('cors');
 const axios = require('axios');
 
 const app = express();
-const PORT = 5432;
+const PORT = 5002;
 
 // Enable CORS for all routes
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000'
+}));
 
 // Parse JSON bodies
 app.use(express.json());
