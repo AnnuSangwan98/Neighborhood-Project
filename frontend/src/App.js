@@ -124,8 +124,8 @@ function App() {
     try {
       // Fetch both APIs in parallel
       const [neighborhoodResponse, crimeResponse] = await Promise.all([
-        fetch(`https://neighborhood-project.onrender.com/api/neighborhood-data?latitude=${searchParams.latitude}&longitude=${searchParams.longitude}&radius=${searchParams.radius}`),
-        fetch(`https://neighborhood-project.onrender.com/api/crime-data?city=${encodeURIComponent(searchParams.city)}`)
+        fetch(`https://neighborhood-project-1.onrender.com/api/neighborhood-data?latitude=${searchParams.latitude}&longitude=${searchParams.longitude}&radius=${searchParams.radius}`),
+        fetch(`https://neighborhood-project-1.onrender.com/api/crime-data?city=${encodeURIComponent(searchParams.city)}`)
       ]);
 
       if (!neighborhoodResponse.ok) {

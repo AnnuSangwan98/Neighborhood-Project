@@ -7,7 +7,10 @@ const PORT = 5432;
 
 // Enable CORS for all routes
 app.use(cors({
-  origin: 'https://neighborhood-project-4.onrender.com'
+  origin: [
+    'https://neighborhood-project-1.onrender.com',
+    'http://localhost:3000'
+  ]
 }));
 
 // Parse JSON bodies
