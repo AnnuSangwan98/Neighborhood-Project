@@ -114,6 +114,14 @@ Neighborhood Score = Weighted sum of:
 
 Weights are customizable and displayed in UI.
 
+## 📸 Screenshots
+
+### 🧮 Neighborhood Score Breakdown
+![Neighborhood Score](assets/screenshot-score.png)
+
+### 🛡️ Crime & Safety Details
+![Crime Data](assets/screenshot-crime.png)
+
 ## 💡 Edge Case Handling
 Missing lat/lon/city → graceful backend error
 Timeout or API failure → shows fallback data
@@ -136,7 +144,6 @@ This project:
 ✅ Uses algorithmic reasoning to help users
 ✅ Handles real-world API, validation, and integration challenges
 🔖 A perfect blend of data science, full-stack development, and systems thinking!
-
 
 
 
