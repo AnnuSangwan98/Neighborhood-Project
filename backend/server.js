@@ -6,7 +6,9 @@ const app = express();
 const PORT = 5432;
 
 // Enable CORS for all routes
-app.use(cors());
+app.use(cors({
+  origin: 'https://neighborhood-project-4.onrender.com'
+}));
 
 // Parse JSON bodies
 app.use(express.json());
